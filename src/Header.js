@@ -2,15 +2,12 @@ import React from 'react';
 import './Header.css'
 import image from './shopper_logo.jpg'
 
-
 function Header() {
   return (
     <div className='header'>
       <img
-     
-      src = {image} width='70px' height= '60px'alt='noo1'
+      src = {image} width='90px' height= '90px'alt='noo1'
       />
-
       <div className = "header_Search">
       <input className="header_searchInput" type="text" />
       </div>
@@ -30,12 +27,15 @@ function Header() {
 
         <div className='header_option'>
         <span className="header_optionLineOne">Your</span>
-            <span className="header_optionLineTwo">Prime</span>
+        <span className="header_optionLineTwo">Prime</span>
           </div>
 
-</div></div>
+        <div className='header_optionBasket'>
+        <ShoppingBasketIcon/>
+        <span className="header_optionLineTwo  header_basketCount">0</span>
+        </div>
 
+</div></div>
   )
 }
-
 export default Header
